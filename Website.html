@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Comic Strip Generator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url('923.jpg');
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
+    /* Style for the comic strip container */
+    .comic-container {
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 10px;
+      max-height: 70vh; /* Set a maximum height relative to the viewport height */
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    /* Style for the comic strip image box */
+    .comic-box {
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 10px;
+      max-width: 300px; /* Adjust maximum width */
+    }
+
+    .comic-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center my-4">Comic Strip Generator</h1>
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <form id="comicForm">
+          <div class="form-group">
+            <h3><label for="comicText">Enter Text for Panels:</label></h3>
+            <textarea class="form-control" id="comicText" rows="5" placeholder="Enter text for panels..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Generate Comic</button>
+        </form>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-lg-12">
+        <!-- Comic strip container with scrollable images -->
+        <div id="comicStrip" class="comic-container">
+          <!-- Comic strip images will be displayed here -->
+        </div>
+      </div>
+    </div>
+    <div id="loadingSpinner" class="text-center mt-4" style="display: none;">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

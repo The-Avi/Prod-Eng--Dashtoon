@@ -1,0 +1,33 @@
+/* Add your custom styles here */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  #comicForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #comicStrip {
+    margin-top: 20px;
+  }
+  
+  .comic-panel {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #loadingSpinner {
+    display: none;
+  }
+  
